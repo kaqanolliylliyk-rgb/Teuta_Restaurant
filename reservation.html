@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Rezervo tryezë në Restorant Teuta, Prishtinë. Ngrënie në ambient dhe kërkesa speciale." />
+  <title>Rezervimi | Restorant Teuta</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://images.unsplash.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Outfit:wght@200;300;400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">Teuta<span>Restorant · Prishtinë</span></a>
+      <nav class="nav" aria-label="Kryesore">
+        <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Hap navigimin">Nav</button>
+        <ul id="site-nav" class="nav-list">
+          <li><a href="index.html">Ballina</a></li>
+          <li><a href="menu.html">Menyja</a></li>
+          <li><a href="reservation.html" aria-current="page">Rezervimi</a></li>
+          <li><a href="services.html">Shërbimet</a></li>
+          <li><a href="location.html">Vendndodhja</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="page-banner">
+    <img
+      src="https://images.unsplash.com/photo-1424847651672-bf20a4b0982b?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=1800&amp;q=82"
+      alt="Tryezë e gatshme për mysafirë"
+      width="1800"
+      height="1200"
+      loading="eager"
+      decoding="async"
+      referrerpolicy="no-referrer"
+    />
+  </div>
+
+  <main>
+    <header class="page-hero">
+      <p class="eyebrow">Tryeza juaj ju pret</p>
+      <h1>Rezervimi</h1>
+      <p class="lead">Shkruani datën, orën dhe numrin e personave. Për rezervime në të njëjtën ditë ose grupe të mëdha, shpesh më i shpejtë është të na telefononi në <a href="tel:+38343757351">+383 43 757 351</a>.</p>
+    </header>
+
+    <form id="reservation-form" class="form-card" data-email="hello@teutarestaurant.com">
+      <div class="form-group">
+        <label for="emri">Emri dhe mbiemri</label>
+        <input id="emri" name="emri" type="text" required autocomplete="name" placeholder="Emri juaj i plotë" />
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required autocomplete="email" placeholder="ju@shembull.com" />
+      </div>
+      <div class="form-group">
+        <label for="telefoni">Telefoni</label>
+        <input id="telefoni" name="telefoni" type="tel" autocomplete="tel" placeholder="+383 …" />
+      </div>
+      <div class="form-group">
+        <label for="persona">Numri i personave</label>
+        <select id="persona" name="persona" required>
+          <option value="">Zgjidhni</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6+">6 ose më shumë</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="data">Data e preferuar</label>
+        <input id="data" name="data" type="date" required />
+      </div>
+      <div class="form-group">
+        <label for="ora">Ora e preferuar</label>
+        <input id="ora" name="ora" type="time" required />
+      </div>
+      <div class="form-group">
+        <label for="shenime">Shënime</label>
+        <textarea id="shenime" name="shenime" placeholder="Rast i veçantë, kërkesa ushqimore, preferencë për tryezë…"></textarea>
+      </div>
+      <div class="form-actions">
+        <button type="submit" class="btn">Dërgo kërkesën</button>
+      </div>
+      <p class="form-hint">Duke dërguar, hapet aplikacioni i emailit me një mesazh të përgatitur. Vendosni adresën e saktë të emailit në atributin data-email të formularit, ose na telefononi për të konfirmuar rezervimin.</p>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="logo">Teuta<span>Restorant</span></div>
+      <nav class="footer-nav" aria-label="Fundi i faqes">
+        <a href="menu.html">Menyja</a>
+        <a href="reservation.html">Rezervimi</a>
+        <a href="services.html">Shërbimet</a>
+        <a href="location.html">Vendndodhja</a>
+      </nav>
+      <p>© Restorant Teuta · Prishtinë</p>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
